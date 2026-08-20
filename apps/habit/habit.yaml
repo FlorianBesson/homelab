@@ -32,9 +32,9 @@ spec:
             mountPath: /data
       volumes:
         - name: habit-data
-          # persistentVolumeClaim:
-          #  claimName: habit-data
-          hostPath: 
-            path: /data 
-            type: Directory
+          persistentVolumeClaim:
+            claimName: habit-data
+          # hostPath: 
+          #   path: /data 
+          #   type: Directory
 
