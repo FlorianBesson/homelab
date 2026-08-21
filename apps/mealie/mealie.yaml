@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mealie-deployment
+  namespace: mealie
+  labels:
+    app: mealie
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mealie
+  template:
+    metadata:
+      labels:
+        app: mealie
+      containers:
+      - name: mealie
+        image: hkotel/mealie:v3.23.0
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 9000
+        volumeMounts:
+          - name: mealie-data
+            mountPath: /data
+      volumes:
+        - name: mealie-data
+          persistentVolumeClaim:
+            claimName: mealie-data
