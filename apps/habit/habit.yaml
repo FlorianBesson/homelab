@@ -17,7 +17,6 @@ spec:
     spec:
       imagePullSecrets:
       - name: ghcr-secret
-
       containers:
       - name: habit
         image: ghcr.io/florianbesson/habit-tracker-app:v2
@@ -34,7 +33,3 @@ spec:
         - name: habit-data
           persistentVolumeClaim:
             claimName: habit-data
-          # hostPath: 
-          #   path: /data 
-          #   type: Directory
-

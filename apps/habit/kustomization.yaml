@@ -3,5 +3,4 @@ kind: Kustomization
 resources:
 - habit.yaml
 - pvc.yaml
-- pv.yaml
 - svc.yaml
