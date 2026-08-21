@@ -14,6 +14,7 @@ spec:
     metadata:
       labels:
         app: mealie
+    spec:
       containers:
       - name: mealie
         image: hkotel/mealie:v3.23.0
