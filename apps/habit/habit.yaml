@@ -20,7 +20,7 @@ spec:
 
       containers:
       - name: habit
-        image: ghcr.io/florianbesson/habit-tracker-app:v2
+        image: ghcr.io/florianbesson/habit-tracker-app:latest
         imagePullPolicy: Always
         ports:
           - containerPort: 3000
