@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: paperless-deployment
+  namespace: paperless
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: paperless
+  template:
+    metadata:
+      labels:
+        app: paperless
+    spec:
+      containers:
+      - name: paperless
+        image: paperlessngx/paperless-ngx:3.0
+        imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: 3001
+        volumeMounts:
+          - name: paperless-data
+            mountPath: /data
+      volumes:
+        - name: paperless-data
+          persistentVolumeClaim:
+            claimName: paperless-data
