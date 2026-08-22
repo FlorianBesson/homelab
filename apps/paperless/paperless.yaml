@@ -17,6 +17,9 @@ spec:
       - name: paperless
         image: paperlessngx/paperless-ngx:3.0
         imagePullPolicy: IfNotPresent
+        env:
+        - name: PAPERLESS_SECRET_KEY
+          value: ${PAPERLESS_SECRET_KEY}
         ports:
           - containerPort: 3001
         volumeMounts:
