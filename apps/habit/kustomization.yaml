@@ -4,3 +4,4 @@ resources:
 - habit.yaml
 - pvc.yaml
 - svc.yaml
+- ingress.yaml

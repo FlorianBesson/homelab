@@ -4,9 +4,9 @@ metadata:
   name: habit-service
   namespace: habit
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: habit
   ports:
-  - port: 7777
+  - port: 7777 
     targetPort: 3000

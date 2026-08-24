@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: habit-ingress
+  namespace: habit 
+spec:
+  ingressClassName: traefik
+  rules:
+  - host: habit.lab
+    http:
+      paths:
+      - backend: 
+          service:
+            name: habit-service
+            port: 
+              number: 7777
+        path: '/'
+        pathType: Prefix
