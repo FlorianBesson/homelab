@@ -9,5 +9,5 @@ spec:
     app: paperless
   ports:
   - port: 8888
-    targetPort: 3001
+    targetPort: 8000
 
