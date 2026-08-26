@@ -21,3 +21,11 @@ spec:
         env:
         - name: POST_PASSWORD
           value: ${POSTGRES_PASSWORD}
+        ports:
+        - containerPort: 5432
+        volumeMounts:
+        - name: postgres-data
+          mounthPath: /data
+      volumes:
+      - persistentVolumeClaim:
+        

@@ -1,3 +1,3 @@
 working on my personal homelab
 
-its currently running 2-node on bare-metal Kubernetes using flux 
+its currently running 2-node on bare-metal proxmox running Kubernetes using flux 
