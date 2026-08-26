@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
 - paperless.yaml 
 - paperless-pvc.yaml
-- postgre-pvc.yaml
-- postgre.yaml
+- postgres-pvc.yaml
+- postgres.yaml
 - svc.yaml
