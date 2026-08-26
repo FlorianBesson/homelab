@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: postgres-deployment
   namespace: postgres
-  labels: postgres
 spec:
   replicas: 1
   selector: 
@@ -15,7 +14,7 @@ spec:
         app: postgres
     spec:
       containers:
-      - name: postgre
+      - name: postgres
         image: postgres:18.6-bookworm
         imagePullPolicy: IfNotPresent
         env:
@@ -25,7 +24,9 @@ spec:
         - containerPort: 5432
         volumeMounts:
         - name: postgres-data
-          mounthPath: /data
+          mountPath: /data
       volumes:
-      - persistentVolumeClaim:
+      - persistentVolumeClaim: 
+          claimName: postgres-data
+        name: postgres-data
         
