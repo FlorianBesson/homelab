@@ -5,7 +5,13 @@ metadata:
   namespace: valkey
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: valkey
   template:
+    metadata:
+      labels:
+        app: valkey
     spec:
       containers: 
       - name: valkey
