@@ -8,3 +8,6 @@ resources:
 - postgres-svc.yaml
 - postgres.yaml
 - paperless-ingress.yaml
+- valkey-pvc.yaml
+- valkey-svc.yaml
+- valkey.yaml

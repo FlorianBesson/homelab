@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: valkey-deployment
+  namespace: valkey
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers: 
+      - name: valkey
+        image: valkey/valkey:9.1.1-alpine
+        ports:
+        - containerPort: 6379
