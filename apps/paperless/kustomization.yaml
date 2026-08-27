@@ -7,3 +7,4 @@ resources:
 - postgres-pvc.yaml
 - postgres-svc.yaml
 - postgres.yaml
+- paperless-ingress.yaml

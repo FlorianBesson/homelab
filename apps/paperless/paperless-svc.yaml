@@ -4,7 +4,7 @@ metadata:
   name: paperless-service
   namespace: paperless
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: paperless
   ports:
