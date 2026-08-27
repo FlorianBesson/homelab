@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Services
+metadata:
+  name: postgres-service
+  namespace: postgres
+spec:
+  type: ClusterIP
+  selector:
+    app:
+  ports:
+  - name: postgres
+    port: 5432
+    targetPort: 5432
+    protocol: TCP
