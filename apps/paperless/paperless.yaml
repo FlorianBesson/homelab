@@ -19,7 +19,19 @@ spec:
         imagePullPolicy: IfNotPresent
         env:
         - name: PAPERLESS_SECRET_KEY
-          value: ${PAPERLESS_SECRET_KEY}
+          value: ${PAPERLESS_SECRET_KEY
+        - name: PAPERLESS_DBENGINE
+          value: ${PAPERLESS_DBENGINE}
+        - name: PAPERLESS_DBHOST
+          value: ${PAPERLESS_DBHOST}
+        - name: PAPERLESS_DBPORT
+          value: ${PAPERLESS_DBPORT}
+        - name: PAPERLESS_DBNAME
+          value: ${PAPERLESS_DBNAME}
+        - name: PAPERLESS_DBUSER
+          value: ${PAPERLESS_DBUSER}
+        - name: PAPERLESS_DBPASS
+          value: ${PAPERLESS_DBPASS}
         ports:
           - containerPort: 8000
         volumeMounts:
