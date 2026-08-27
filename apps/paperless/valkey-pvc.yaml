@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: persistentVolumeClaim
+metadata:
+  name: valkey-data
+  namespace: valkey
+spec:
+  storageClassName: local-path
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 128Mi

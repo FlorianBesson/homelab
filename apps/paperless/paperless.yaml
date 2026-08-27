@@ -32,6 +32,8 @@ spec:
           value: ${PAPERLESS_DBUSER}
         - name: PAPERLESS_DBPASS
           value: ${PAPERLESS_DBPASS}
+        - name: PAPERLESS_REDIS
+          value: redis://valkey:6379
         ports:
           - containerPort: 8000
         volumeMounts:

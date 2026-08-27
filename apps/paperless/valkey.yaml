@@ -16,5 +16,14 @@ spec:
       containers: 
       - name: valkey
         image: valkey/valkey:9.1.1-alpine
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 6379
+        volumeMounts:
+          - name: valkey-data
+            mountPath: /data
+      volumes:
+      - name: valkey-data
+        persistentVolumeClaim:
+          claimName: valkey-data
+    
