@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: postgres-config
+  namespace: postgres
+data:
+  POSTGRES_DB: paperless 
+  POSTGRES_USER: paperless
+  

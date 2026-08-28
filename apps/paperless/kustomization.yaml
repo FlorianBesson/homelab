@@ -4,9 +4,11 @@ resources:
 - paperless.yaml 
 - paperless-pvc.yaml
 - paperless-svc.yaml
+- paperless-config.yaml
 - postgres-pvc.yaml
 - postgres-svc.yaml
 - postgres.yaml
+- postgres-config.yaml
 - paperless-ingress.yaml
 - valkey-pvc.yaml
 - valkey-svc.yaml
