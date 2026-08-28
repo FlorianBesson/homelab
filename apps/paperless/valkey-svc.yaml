@@ -11,5 +11,5 @@ spec:
   - name: valkey
     port: 6379
     targetPort: 6379
-    protocal: tcp
+    protocol: TCP
   
