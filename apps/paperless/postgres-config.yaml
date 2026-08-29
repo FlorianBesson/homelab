@@ -6,4 +6,3 @@ metadata:
 data:
   POSTGRES_DB: paperless 
   POSTGRES_USER: paperless
-  
