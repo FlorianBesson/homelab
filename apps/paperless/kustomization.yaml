@@ -7,7 +7,6 @@ resources:
 - paperless-config.yaml
 - paperless-ingress.yaml
 - paperless-secret.sops.yaml
-- paperless-ingress.yaml
 - postgres-pvc.yaml
 - postgres-svc.yaml
 - postgres.yaml
