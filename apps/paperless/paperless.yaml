@@ -20,6 +20,8 @@ spec:
         envFrom:
           - configMapRef:
               name: paperless-config
+          - secretRef:
+              name: paperless-secret
         ports:
           - containerPort: 8000
         volumeMounts:

@@ -11,6 +11,7 @@ resources:
 - postgres-svc.yaml
 - postgres.yaml
 - postgres-config.yaml
+- postgres-secret.sops.yaml
 - valkey-pvc.yaml
 - valkey-svc.yaml
 - valkey.yaml

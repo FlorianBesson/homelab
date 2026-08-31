@@ -17,14 +17,16 @@ spec:
       - name: postgres
         image: postgres:18.6-bookworm
         imagePullPolicy: IfNotPresent
-        env:
-        - name: POSTGRES_PASSWORD
-          value: ${POSTGRES_PASSWORD}
+        envFrom:
+          - configMapRef:
+              name: paperless-config
+          - secretRef:
+              name: postgres-secret
         ports:
         - containerPort: 5432
         volumeMounts:
         - name: postgres-data
-          mountPath: /data
+          mountPath: /var/lib/postgresql
       volumes:
       - persistentVolumeClaim: 
           claimName: postgres-data
