@@ -19,7 +19,7 @@ spec:
         imagePullPolicy: IfNotPresent
         envFrom:
           - configMapRef:
-              name: paperless-config
+              name: postgres-config
           - secretRef:
               name: postgres-secret
         ports:
