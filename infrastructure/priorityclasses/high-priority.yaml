@@ -4,3 +4,4 @@ metadata:
   name: high-priority
 preemptionPolicy: PreemptLowerPriority
 value: 100000
+description: "high tier workload, use this for flux, storage and networking stuff"

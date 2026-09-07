@@ -4,3 +4,4 @@ metadata:
   name: low-priority
 preemptionPolicy: PreemptLowerPriority
 value: 10000
+description: "low tier workload, use this for testing, debugging and playground"
