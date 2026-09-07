@@ -20,10 +20,10 @@ spec:
         resources: {}
         securityContext:
           privileged: true
-          volumeMounts:
-            - name: proc
-              mountPath: /host/proc
-              readOnly: true
+        volumeMounts:
+          - name: proc
+            mountPath: /host/proc
+            readOnly: true
       volumes:
         - name: proc
           hostPath:
