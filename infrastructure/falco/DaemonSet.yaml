@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: falco
+  name: falco
+  namespace: security
+spec:
+  selector:
+    matchLabels:
+      app: falco
+  template:
+    metadata:
+      labels:
+        app: falco
+    spec:
+      containers:
+      - image: falcosecurity/falco:0.44.1
+        name: falco
+        resources: {}
+        securityContext:
+          privileged: true

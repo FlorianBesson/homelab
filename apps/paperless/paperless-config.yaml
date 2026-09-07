@@ -10,3 +10,7 @@ data:
   PAPERLESS_DBNAME: paperless
   PAPERLESS_DBUSER: paperless
   PAPERLESS_REDIS: redis://valkey-service.valkey:6379
+  PAPERLESS_DATA_DIR: /data
+  PAPERLESS_MEDIA_ROOT: /data/media
+  PAPERLESS_CONSUMPTION_DIR: /data/consume
+  PAPERLESS_EXPORT_DIR: /data/export
