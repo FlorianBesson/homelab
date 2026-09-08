@@ -5,3 +5,4 @@ resources:
 - pvc.yaml
 - svc.yaml
 - ingress.yaml
+- autoscaler-habit.yaml
