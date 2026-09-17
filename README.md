@@ -2,4 +2,8 @@ working on my personal homelab
 
 its currently running 2-node on bare-metal proxmox running Kubernetes using flux 
 
-![Homelab 17/09/26](/home/ketzon/homelab-gitops/source/k8s.jpg)
+<p align="center">
+  <img src="source/k8s.jpg" width="400">
+  <br>
+  <em>Homelab 17/09/26</em>
+</p>
