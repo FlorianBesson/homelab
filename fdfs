@@ -1,2 +1,0 @@
-NAME                               READY   STATUS    RESTARTS   AGE     IP            NODE   NOMINATED NODE   READINESS GATES
-habit-deployment-dcbff64f5-8dgfh   1/1     Running   0          7h59m   10.42.1.161   k3s2   <none>           <none>
